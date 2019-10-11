@@ -21,11 +21,6 @@ body{
     margin-top: 50px;
 }
 
-.experience{
-}
-
-.para-date{
-}
 .principal p {
     color: rgb(92, 89, 89);
 }
@@ -46,14 +41,15 @@ body{
 
 }
 
+.flex-item-left{
+    flex-basis: 50%;
+}
+
+
 .fas fa-university{
     background-size: 20px 30px;
 }
 
-.footer {
-    display: flex;
-
-}
 
 .footer div{
     justify-content: flex-start;
@@ -93,6 +89,10 @@ body{
 .info p {
     color: rgb(92, 89, 89);
     padding: 0 40px;
+}
+
+.flex-container{
+    display: flex;
 }
 
 hr{

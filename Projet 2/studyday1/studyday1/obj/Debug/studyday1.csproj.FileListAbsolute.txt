@@ -1,0 +1,7 @@
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\bin\Debug\studyday1.exe.config
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\bin\Debug\studyday1.exe
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\bin\Debug\studyday1.pdb
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\obj\Debug\studyday1.csprojAssemblyReference.cache
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\obj\Debug\studyday1.csproj.CoreCompileInputs.cache
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\obj\Debug\studyday1.exe
+C:\Users\fdofj\Documents\Openclassrooms\Dotnet training\dotnet-openclassrooms\Projet 2\studyday1\studyday1\obj\Debug\studyday1.pdb
