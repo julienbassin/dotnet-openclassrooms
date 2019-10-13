@@ -14,13 +14,13 @@ namespace BankApplication
         public string _City { get; set; }
         public int _ZipCode { get; set; }
 
-        Client(string Name, string LastName)
+        public Client(string Name, string LastName)
         {
             _Name = Name;
             _LastName = LastName;
         }
 
-        Client(string Name, string LastName, string Address, string City, int ZipCode)
+        public Client(string Name, string LastName, string Address, string City, int ZipCode)
         {
             _Name = Name;
             _LastName = LastName;

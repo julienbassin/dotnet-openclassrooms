@@ -11,17 +11,19 @@ namespace BankApplication
         static void Main(string[] args)
         {
             // create client with client class
-            Client client1 = new Client("alice", "toto", "5 street" , "New York", "92110");
-            Client client2 = new Client("jon", "titi", "10 Avenue", "Los Angeles", "78390");
+            Client client1 = new Client("alice", "toto", "5 street" , "New York", 92110);
+            Client client2 = new Client("jon", "titi", "10 Avenue", "Los Angeles",78390);
 
             int _nextIndex = 0;
             int _numberOfAccounts = 0;
+
+            var account = new Account();
 
             // ask how many accounts do you want to create fro each client ? 
             
             Account[] _accounts = new Account[_numberOfAccounts];
 
-            //_accounts[_nextIndex] = 
+            _accounts[_nextIndex] = account;
 
             // client can create 1 ou 2 or many account per user
 

@@ -13,9 +13,9 @@ namespace BankApplication
         public decimal _Saving { get; set; }
         public decimal _Amount { get; set; }
 
-        Account() { }
+        public Account() { }
 
-        Account(int AccountId, decimal AmountClient)
+        public Account(int AccountId, decimal AmountClient)
         {
             _AccountId = AccountId;
             _Amount = AmountClient;
