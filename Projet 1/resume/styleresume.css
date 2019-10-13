@@ -38,7 +38,16 @@ body{
     margin-top: -25px;
     color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
+    margin-bottom: 150px;
 
+}
+
+.principal-title-h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #FFD700 ;
 }
 
 .flex-item-left{
