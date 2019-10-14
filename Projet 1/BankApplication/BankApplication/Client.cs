@@ -8,30 +8,41 @@ namespace BankApplication
 {
     public class Client
     {
-        public string _Name { get; set; }
-        public string _LastName { get; set; }
-        public string _Address { get; set; }
-        public string _City { get; set; }
-        public int _ZipCode { get; set; }
+        public string Name { get; set; }
+        public string LastName { get; set; }
+        public string Address { get; set; }
+        public string City { get; set; }
+        public int ZipCode { get; set; }
+        public int AccountID { get; set; } = 3;
 
-        public Client(string Name, string LastName)
+        public Client(string ClientName, string LastClientName)
         {
-            _Name = Name;
-            _LastName = LastName;
+            Name = ClientName;
+            LastName = LastClientName;
         }
 
-        public Client(string Name, string LastName, string Address, string City, int ZipCode)
+        public List <Account> clientlist(int acountid)
         {
-            _Name = Name;
-            _LastName = LastName;
-            _Address = Address;
-            _City = City;
-            _ZipCode = ZipCode;            
+
+            List<Account> list = new List<Account>();
+
+            var Acountlist = list.Where(x => x.AccountId == acountid).ToList();
+
+            return Acountlist;
+        }
+
+        public Client(string ClientName, string ClientLastName, string ClientAddress, string ClientCity, int ClientZipCode)
+        {
+            Name = ClientName;
+            LastName = ClientLastName;
+            Address = ClientAddress;
+            City = ClientCity;
+            ZipCode = ClientZipCode;            
         }
 
         public override string ToString()
         {
-            return $"The client {_Name} has been created".ToString();
+            return $"The client {Name} has been created".ToString();
         }
     }
 }

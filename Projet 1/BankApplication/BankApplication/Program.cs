@@ -14,23 +14,23 @@ namespace BankApplication
             Client client1 = new Client("alice", "toto", "5 street" , "New York", 92110);
             Client client2 = new Client("jon", "titi", "10 Avenue", "Los Angeles",78390);
 
-            int _nextIndex = 0;
-            int _numberOfAccounts = 0;
+            int nextIndex = 0;
+            int numberOfAccounts = 0;
 
             var account = new Account();
 
             // ask how many accounts do you want to create fro each client ? 
             
-            Account[] _accounts = new Account[_numberOfAccounts];
+            Account[] accounts = new Account[numberOfAccounts];
 
-            _accounts[_nextIndex] = account;
+            accounts[nextIndex] = account;
 
             // client can create 1 ou 2 or many account per user
 
             // client can get account number
 
             //Client's choice
-            var input = Console.ReadLine();
+            var input = "";
             do
             {
                 Console.WriteLine("\t\t\t Banking Application");
@@ -40,6 +40,7 @@ namespace BankApplication
                 Console.WriteLine("\t4> Modify");
                 Console.WriteLine("\t5> Display");
                 Console.WriteLine("\t6> Exit");
+                 input = Console.ReadLine();
                 switch (input)
                 {
                     case "1":

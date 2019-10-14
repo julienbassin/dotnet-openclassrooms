@@ -8,59 +8,59 @@ namespace BankApplication
 {
     public class Account
     {
-        public int _AccountId { get; set; }
-        public decimal _Balance { get; set; }
-        public decimal _Saving { get; set; }
-        public decimal _Amount { get; set; }
+        public int AccountId { get; set; } = 3;
+        public decimal Balance { get; set; }
+        public decimal Saving { get; set; }
+        public decimal Amount { get; set; }
 
         public Account() { }
 
-        public Account(int AccountId, decimal AmountClient)
+        public Account(int ClientAccountId, decimal ClientAmount)
         {
-            _AccountId = AccountId;
-            _Amount = AmountClient;
+            AccountId = ClientAccountId;
+            Amount = ClientAmount;
         }
 
         public string GetAccountInfo(string AccountName)
         {
 
-            return $"The account of {AccountName} has {this._Amount}";
+            return $"The account of {AccountName} has {this.Amount}";
         }
 
         public decimal BalanceChecking()
         {
-            return _Balance;
+            return Balance;
         }
 
         public decimal DepositChecking(decimal amount)
         {
 
-            _Balance += amount;
-            return _Balance;
+            Balance += amount;
+            return Balance;
         }
 
         public decimal WithDrawChecking(decimal amount)
         {
-            _Balance -= amount;
-            return _Balance;
+            Balance -= amount;
+            return Balance;
         }
 
         public decimal BalanceSaving()
         {
-            return _Saving;
+            return Saving;
         }
 
         public decimal DepositSaving(decimal amount)
         {
 
-            _Saving += amount;
-            return _Saving;
+            Saving += amount;
+            return Saving;
         }
 
         public decimal WithDrawSaving(decimal amount)
         {
-            _Saving -= amount;
-            return _Saving;
+            Saving -= amount;
+            return Saving;
         }
     }
 }
