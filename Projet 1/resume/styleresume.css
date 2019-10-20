@@ -126,16 +126,37 @@ hr{
     border: 1px solid #FFD700;
 }
 
-.hobbies{
 
-}
 @media screen and (max-width : 770px){
+
+    *{
+        box-sizing: border-box;
+    }
+
+    html,body{
+        font-size: 12px;
+    }
+
     .photo_me img{
         border-radius: 50%;
         border: 4px solid rgba(212,175,55, 0.4);
-        width : 100px;
-        height: 100px;
+        width : 75px;
+        height: 75px;
     }
 
+    .icon-hobbies{
+        position: relative;
+        float: left;
+        font-size: 34px;
+        margin: -6px 18px 0 0;
+        color: rgb(61, 60, 60);
+        padding-top: 20px;
+        padding-right: 15px;
+    }
+
+    .about_me p {
+        height: 800dpi;
+        text-align: justify;
+    }
 
 }
