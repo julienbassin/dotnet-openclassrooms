@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+html ,body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: light;
+
+    margin:0;
+}
+/*
+my code to devide height for div
+*/
+/* .info>div{
+    height: calc(100vh/2);
+    margin-bottom:50px;
+} */
+.principal{
+    float: right;
+    width: 70%;
+    padding-left: 40px;
+    height: 100%;
+}
+.principal>div{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    height: 100%;
+    display: flex;
+    overflow: initial;
+}
+.principal-title{
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+.principal p {
+    color: rgb(92, 89, 89);
+}
+
+.color-principal-firstname{
+    color: #FFD700;
+}
+
+.color-principal-lastname{
+    color: rgb(8, 7, 0);
+    font-weight: lighter;
+}
+
+.principal-title-h2{
+    margin-top: -25px;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    margin-bottom: 150px;
+
+}
+
+.principal-title-h2::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #FFD700 ;
+}
+
+.flex-item-left{
+    flex-basis: 50%;
+}
+
+.about_me p {
+    /* height: 810px; */
+    text-align: justify;
+
+}
+
+.icon{
+    position: relative;
+    float: left;
+    font-size: 40px;
+    margin: -6px 18px 0 0;
+    color: #FFD700;
+}
+
+
+.icon-hobbies{
+    position: relative;
+    float: left;
+    font-size: 40px;
+    margin: -6px 18px 0 0;
+    color: rgb(61, 60, 60);
+    padding-top: 20px;
+    padding-right: 30px;
+}
+
+.div-hobbies{
+    padding-left: 15%;
+}
+
+.references ul li{
+    list-style: none;
+}
+
+
+.info{
+    position: relative;
+    float: left;
+    width:30%;
+    /* height: 100vh; */
+    background-color:#FFD700;
+    margin-bottom: 0;
+    word-wrap: break-word;
+
+}
+
+.info h1{
+    text-align: center;
+    background-color: rgb(61, 60, 60);
+    color: #FFD700;
+    font-size: 1.8em;
+    padding: 10px 0;
+}
+
+.photo_me{
+    margin: 30px;
+    text-align: center;
+}
+
+.photo_me img{
+    border-radius: 50%;
+    border: 4px solid rgba(212,175,55, 0.4);
+}
+
+.info p {
+    color: rgb(92, 89, 89);
+    padding: 0 40px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+hr{
+    border: 1px solid #FFD700;
+}
+
+.hobbies{
+    margin-top: 99% ;
+}
+
+
+@media screen and (max-width : 770px){
+    .photo_me img{
+        border-radius: 50%;
+        border: 4px solid rgba(212,175,55, 0.4);
+        width : 100px;
+        height: 100px;
+    }
+
+
+}
