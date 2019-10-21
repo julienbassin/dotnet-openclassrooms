@@ -19,17 +19,7 @@ namespace BankApplication
         {
             Name = ClientName;
             LastName = LastClientName;
-        }
-
-        public List <Account> clientlist(int acountid)
-        {
-
-            List<Account> list = new List<Account>();
-
-            var Acountlist = list.Where(x => x.AccountId == acountid).ToList();
-
-            return Acountlist;
-        }
+        }      
 
         public Client(string ClientName, string ClientLastName, string ClientAddress, string ClientCity, int ClientZipCode)
         {
@@ -38,6 +28,16 @@ namespace BankApplication
             Address = ClientAddress;
             City = ClientCity;
             ZipCode = ClientZipCode;            
+        }
+
+        public List<Account> clientlist(int acountid)
+        {
+
+            List<Account> list = new List<Account>();
+
+            var Acountlist = list.Where(x => x.AccountId == acountid).ToList();
+
+            return Acountlist;
         }
 
         public override string ToString()

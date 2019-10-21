@@ -40,7 +40,7 @@ namespace BankApplication
                 Console.WriteLine("\t4> Modify");
                 Console.WriteLine("\t5> Display");
                 Console.WriteLine("\t6> Exit");
-                 input = Console.ReadLine();
+                input = Console.ReadLine();
                 switch (input)
                 {
                     case "1":
