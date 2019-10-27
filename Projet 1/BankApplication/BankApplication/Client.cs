@@ -30,12 +30,13 @@ namespace BankApplication
             ZipCode = ClientZipCode;            
         }
 
-        public List<Account> clientlist(int acountid)
+        //methode qui retourne mes comptes superieur à 0 ou inférieur à 0
+        public List<Account> AccountList()
         {
 
             List<Account> list = new List<Account>();
 
-            var Acountlist = list.Where(x => x.AccountId == acountid).ToList();
+            var Acountlist = list.ToList();
 
             return Acountlist;
         }
