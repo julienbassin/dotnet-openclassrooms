@@ -19,6 +19,7 @@ namespace BankApplication
         {
             Name = ClientName;
             LastName = LastClientName;
+<<<<<<< HEAD
         }
 
         public List <Account> clientlist(int acountid)
@@ -30,6 +31,9 @@ namespace BankApplication
 
             return Acountlist;
         }
+=======
+        }      
+>>>>>>> 4aa9a8ab09be88623c907307f2854b8d9475304e
 
         public Client(string ClientName, string ClientLastName, string ClientAddress, string ClientCity, int ClientZipCode)
         {
@@ -38,6 +42,17 @@ namespace BankApplication
             Address = ClientAddress;
             City = ClientCity;
             ZipCode = ClientZipCode;            
+        }
+
+        //methode qui retourne mes comptes superieur à 0 ou inférieur à 0
+        public List<Account> AccountList()
+        {
+
+            List<Account> list = new List<Account>();
+
+            var Acountlist = list.ToList();
+
+            return Acountlist;
         }
 
         public override string ToString()
