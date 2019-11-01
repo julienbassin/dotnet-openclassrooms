@@ -26,7 +26,7 @@ namespace BankApplication
 
             List<Account> list = new List<Account>();
 
-            var Acountlist = list.Where(x => x.AccountId == acountid).ToList();
+            var Acountlist = list.Add(this.AccountID);
 
             return Acountlist;
         }

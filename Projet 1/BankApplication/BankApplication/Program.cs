@@ -13,17 +13,24 @@ namespace BankApplication
             // create client with client class
             Client client1 = new Client("alice", "toto", "5 street" , "New York", 92110);
             Client client2 = new Client("jon", "titi", "10 Avenue", "Los Angeles",78390);
+            Console.WriteLine($"{client1.ToString()}");
+            Console.WriteLine($"{client2.ToString()}");
 
-            int nextIndex = 0;
             int numberOfAccounts = 0;
+
+            client1.WithDrawChecking();
 
             var account = new Account();
 
-            // ask how many accounts do you want to create fro each client ? 
-            
+            // ask how many accounts do you want to create fro each client ?
+            Console.WriteLine("How many accounts do you want create ?");
+            Int32.TryParse(Console.ReadLine(), out numberOfAccounts);
             Account[] accounts = new Account[numberOfAccounts];
-
-            accounts[nextIndex] = account;
+            for (int i = 0; i < accounts.Length-1; i++)
+            {
+                accounts[i] = account;
+            }
+            
 
             // client can create 1 ou 2 or many account per user
 
